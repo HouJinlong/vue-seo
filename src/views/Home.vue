@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <h1>This is an home page</h1>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  metaInfo: {
+    title: '我是Home', // set a title
+    meta: [{             // set meta
+      name: 'keyWords',
+      content: '我是Home关键字'
+    },
+    {
+      name: 'description',
+      content: '我是Home描述'
+    }],
+    link: [{ // set link
+      rel: 'asstes',
+      href: 'https://assets-cdn.github.com/'
+    }]
   }
 }
 </script>

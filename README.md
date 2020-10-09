@@ -5,20 +5,21 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 开发
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 构建
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 看效果
 ```
-npm run lint
+npm run view
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> 通过vue-meta-info 和 prerender-spa-plugin 预渲染页面生成 静态html
+
+![https://cdn.jsdelivr.net/gh/HouJinlong/pic@master/2020-10-09/20201009163723.png]()
