@@ -21,7 +21,8 @@ module.exports = {
               inject: { //默认挂在window.__PRERENDER_INJECTED对象上，可以通过window.__PRERENDER_INJECTED.foo在预渲染页面取值
               foo: 'bar'
             },
-            headless: false,
+            // 解决服务器编译报错 Error: Failed to launch chrome!
+            // headless: false,
             // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上。
             renderAfterDocumentEvent: 'render-event'//等到事件触发去渲染，此处我理解为是Puppeteer获取页面的时机
           })
