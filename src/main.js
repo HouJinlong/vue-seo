@@ -10,6 +10,6 @@ new Vue({
   render: h => h(App),
   //添加到这里,这里的render-event和vue.config.js里面的renderAfterDocumentEvent配置名称一致
   mounted () {
-    document.dispatchEvent(new Event('render-event'))
+    // document.dispatchEvent(new Event('render-event'))
   }
 }).$mount('#app')

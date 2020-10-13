@@ -1,6 +1,8 @@
 <template>
   <div class="home">
      <h1>This is an home page</h1>
+     {{url}}
+     <input type="text" v-model="url">
   </div>
 </template>
 
@@ -22,6 +24,19 @@ export default {
       rel: 'asstes',
       href: 'https://assets-cdn.github.com/'
     }]
+  },
+  data(){
+    return {
+      url:'侯晋龙'
+    }
+  },
+  mounted () {
+    setTimeout(()=>{
+      this.url = '七七七',
+      this.$nextTick(function(){
+        document.dispatchEvent(new Event('render-event'))
+      })
+    },3000)
   }
 }
 </script>

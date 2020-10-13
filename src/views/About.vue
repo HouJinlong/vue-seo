@@ -21,6 +21,9 @@ export default {
       rel: 'asstes',
       href: 'https://www.baidu.com/'
     }]
+  },
+  mounted () {
+    document.dispatchEvent(new Event('render-event'))
   }
 }
 </script>
